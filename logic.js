@@ -4,6 +4,7 @@ const Intern = require("./lib/Intern");
 const inquirer = require('inquirer');
 const fs = require('fs');
 const path = require("path");
+const teamMembers =[]
 
 const output_directory= path.resolve(__dirname,"output");
 const outputPath = path.join(output_directory, "index.html")
@@ -49,6 +50,12 @@ function addManagerToTeam(){
 function addTeamMembers(){
     inquirer
         .prompt([
+            // {
+            //     type:"list",
+            //     message:"Would you like to add more team members?",
+            //     name:"continue",
+            //     choices:["Yes", "No",]  
+            // },
             {
                 type:"list",
                 message:"What is the team member's role?",
@@ -56,13 +63,17 @@ function addTeamMembers(){
                 choices:["Engineer", "Intern", "Unknown"]  
             }])
         .then(val => {
-            if(val.jobTitle === "Engineer"){
-                engineerInfo();
-            }else if(val.jobTitle === "Intern"){
-                intenrInfo();
-            }else {
-                createFile();
-            }
+            // if(val.continue === "Yes"){
+                if (val.jobTitle === "Engineer"){
+                        engineerInfo();
+                    }else if(val.jobTitle === "Intern"){
+                        intenrInfo();
+                    }else {
+                        createFile();
+                    }
+                // } else if (val.continue === "No"){
+                //         createFile();
+                //     };
         })
 };
 
@@ -128,10 +139,4 @@ function createFile(){
 
 start();
 
-// },
-// {
-//     type: "list",
-//     message:"Would you like to add more team members?",
-//     name:"continue",
-//     choices:["yes","no"]
-// }
+
