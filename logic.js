@@ -2,7 +2,7 @@ const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
 const inquirer = require('inquirer');
-const fs = inquire('fs');
+const fs = require('fs');
 const path = require("path");
 
 const output_directory= path.resolve(__dirname,"output");
