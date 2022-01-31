@@ -1,31 +1,32 @@
 {
-    "name": "team",
+    "name": "teamProfileGenerator",
     "version": "1.0.0",
     "description": "OOP and testing",
-    "main": "app.js",
+    "main": "index.js",
     "directories": {
-      "lib": "lib",
-      "test": "test"
+        "lib": "lib",
+        "test": "test"
     },
     "scripts": {
-      "test": ""
+        "test": ""
     },
     "repository": {
-      "type": "git",
-      "url": ""
+        "type": "git",
+        "url": ""
     },
     "author": "Silvia",
     "license": "ISC",
     "bugs": {
-    "url": "https://github.com/sytrejo/teamProfileGenerator"
+        "url": "https://github.com/sytrejo/teamProfileGenerator"
     },
     "homepage": "https://github.com/sytrejo/teamProfileGenerator",
     "dependencies": {
-      "inquirer": "^6.3.1",
-      "yargs": "^15.4.0"
+        "inquire": "^0.4.8",
+        "inquirer": "^6.5.2",
+        "yargs": "^15.4.0"
     },
     "devDependencies": {
-      "jest": "^24.9.0",
-      "node-notifier": ">=8.0.1"
+        "jest": "^24.9.0",
+        "node-notifier": ">=8.0.1"
     }
-  }
+}

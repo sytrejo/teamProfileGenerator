@@ -4,24 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team Profiles</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/1e0a13a89f.js" crossorigin="anonymous"></script>
+    <title>Team Profile Generator</title>
 </head>
 <body>
-    <div class="main" id="main">
-        <div class="title" id="title">My Team</div>
-        <div class="profiles" id="profiles">
-            <div class="profileHeader" id="profileHeader">
-                <h1 class="name" id="name"></h1>
-                <h3 class="jobTitle" id="jobTitle"></h3>
-            </div>
-            <div class="employeeDetails" id="employeeDetails">
-                <h4 class="id" id="id">Employee ID:</h4>
-                <h4 class="email" id="Email">Employee Email</h4>
-                <h4 class="officeNumber" id="officeNumber">Office Number:</h4>
+    <header>
+        <h1> My Team</h1>
+    </header>
+
+    <main>
+        <div class="card" style="width: 20rem;">
+            <div class="card-header">
+                John<br/>
+                <i class="fas fa-tasks" alt="icon"></i>Manager</div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">ID: 1234</li>
+                    <li class="list-group-item">Email: <span id="email"><a href="mailto:john@gmail.com">john@gmail.com</a></span></li>
+                    <li class="list=group-item">Office Number: 123</li>
+                </ul>
             </div>
 
+            <div class="card-header">
+                Bree<br/>
+                <i class="fas fa-glasses" alt="icon"></i>Engineer</div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">ID: 2345</li>
+                    <li class="list-group-item">Email: <span id="email"><a href="mailto:Bree@gmail.com">Bree@gmail.com</a></span></li>
+                    <li class="list=group-item">Github Username: <a target="_blank" href="https://github.com/bree23">bree23</a></li>
+                </ul>
+            </div>
+
+            <div class="card-header">
+                Alex<br/>
+                <i class="fas fa-user-graduate" alt="icon"></i>Intern</div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">ID: 3456 </li>
+                    <li class="list-group-item">Email: <span id="email"><a href="mailto:Alex@gmail.com">alex@gmail.com</a></span></li>
+                    <li class="list=group-item">School: Udemy</li>
+                </ul>
+            </div>
+        
         </div>
-    </div>
+    </main>
     
 </body>
 </html>
