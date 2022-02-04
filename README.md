@@ -1,10 +1,10 @@
 # teamProfileGenerator
-[Description](#Description)
-[Installation](#Installation)
-[Usage](#Usage)
-[License](#License)
-[Deployment](#Deployment)
-[Screenshots](#Screenshots)
+1. [Description](#Description)
+2.  [Installation](#Installation)
+3. [Usage](#Usage)
+4. [License](#License)
+5. [Deployment](#Deployment)
+6. [Screenshots](#Screenshots)
 
 ## Description
 
