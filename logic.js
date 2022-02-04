@@ -27,7 +27,7 @@ const promptManager = () => {
         {
         type: "input",
         message:"What is the team manager's ID?",
-        name:"employeeId",
+        name:"id",
         },
         {
         type: "input",
@@ -35,7 +35,7 @@ const promptManager = () => {
         name:"officeNumber",
     }]).then(answers => {
         console.log(answers);
-        const manager = new Manager(answers.name, answers.employeeId, answers.email, answers.officeNumber);
+        const manager = new Manager(answers.name, answers.id, answers.email, answers.officeNumber);
         teamMembers.push(manager);
         promptMenu();
     })
@@ -74,7 +74,7 @@ const promptEngineer = () => {
         },
         {
             type:'input',
-            name:'employeeId',
+            name:'id',
             message:'What is the employeeId of the engineer?',
         },
         {
@@ -90,7 +90,7 @@ const promptEngineer = () => {
     ])
     .then(answers => {
         console.log(answers);
-        const engineer = new Engineer(answers.name, answers.employeeId, answers.email, answers.githubUsername);
+        const engineer = new Engineer(answers.name, answers.id, answers.email, answers.githubUsername);
         teamMembers.push(engineer);
         promptMenu();
     })
@@ -107,13 +107,13 @@ const promptIntern = () => {
         },
         {
             type:'input',
-            name:'employeeId',
+            name:'id',
             message:'Enter the employee Id for the Intern:',
         },
         {
             type:'input',
             name:'email',
-            message:'Entern the email address of the Intern: ',
+            message:'Enter the email address of the Intern: ',
         },
         {
             type:'input',
@@ -122,7 +122,7 @@ const promptIntern = () => {
         }
     ]).then(answers => {
         console.log(answers);
-        const intern = new Intern(answers.name, answers.employeeId, answers.email, answers.school);
+        const intern = new Intern(answers.name, answers.id, answers.email, answers.school);
         teamMembers.push(intern);
         promptMenu();
     })
