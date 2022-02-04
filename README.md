@@ -24,13 +24,13 @@ This application is rendered under MIT.
 
 ## Deploymet
 
-Video Link:
+Video Link: [Google Drive Link to Video](https://drive.google.com/file/d/1giShSBJJgdg3eynYG9RYRdjzKQ7CGmT9/view?usp=sharing)
 
 Repo Link: [https://github.com/sytrejo/teamProfileGenerator](https://github.com/sytrejo/teamProfileGenerator)
 
 ## Screenshots
 
-![Terminal Inpur](images/Terminal input.jpg)
+![Terminal Input](images/Terminal input.jpg)
 ![Output](images/Output.jpg)
 
  
